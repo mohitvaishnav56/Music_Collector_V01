@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background: #F4F4F5;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo{
+    color: #F54A00;
+    font-size: 2.5vw;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main nav div {
+    height: 50px;
+    width: 20%;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+    background: #f59f00;
+    color: #F4F4F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2vw;
+    cursor: pointer;
+}
+
+.favourite{
+    width: 50%;
+    height: 80%;
+    background: #f59f00;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #F4F4F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.fav-count {
+    padding: 5px;
+    background: #ec830a;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* form container design */
+.form-cont {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(235, 235, 236, 0.66); /* Semi-transparent overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); /* Safari support */
+    display: none;
+
+}
+
+/* Container for centering the form */
+.org-form {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling the actual form */
+.org-form form {
+    padding: 20px 25px;
+    border: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    background: rgba(244, 244, 245, 0.62); /* More readable */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input styling */
+.org-form form input {
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #313131;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    transition: border 0.3s ease;
+}
+
+/* Focus effect */
+.org-form form input:focus {
+    border: 1px solid #f59f00;
+    outline: none;
+}
+
+/* Button styling */
+.org-form form button {
+    padding: 10px 25px;
+    background: #f59f00;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.org-form form button:hover {
+    background: #d98400;
+}
