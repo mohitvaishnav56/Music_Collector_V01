@@ -1,21 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     height: 100%;
     width: 100%;
     background: #F4F4F5;
 }
 
-main{
+main {
     height: 100%;
     width: 100%;
 }
 
-nav{
+nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@ nav{
     padding: 15px 20px;
 }
 
-.logo{
+.logo {
     color: #F54A00;
     font-size: 2.5vw;
     font-weight: 600;
@@ -38,7 +39,9 @@ main nav div {
     align-items: center;
 }
 
-.icon{
+
+
+.icon {
     height: 40px;
     width: 40px;
     background: #f59f00;
@@ -51,7 +54,7 @@ main nav div {
     cursor: pointer;
 }
 
-.favourite{
+.favourite {
     width: 50%;
     height: 80%;
     background: #f59f00;
@@ -72,19 +75,97 @@ main nav div {
     margin-left: 5px;
 }
 
+.card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    padding: 2vw;
+}
+
+.card-container .card {
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .img {
+    background-size: cover;
+    background-position: top;
+    padding-left: 10px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: end;
+}
+
+.card .img img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .content {
+    height: 30%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card .content h3 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #252525;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card .content p {
+    font-size: 1vw;
+    color: #5e5d5d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card button {
+    height: 30px;
+    min-width: 80%;
+    background: #f59f00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    color: #F4F4F5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #d98400;
+    font-weight: 500;
+}
+
+
+
 /* form container design */
 .form-cont {
     height: 100%;
     width: 100%;
-    background-color: rgba(235, 235, 236, 0.66); /* Semi-transparent overlay */
+    background-color: rgba(235, 235, 236, 0.603);
+    /* Semi-transparent overlay */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px); /* Safari support */
+    -webkit-backdrop-filter: blur(2px);
+    /* Safari support */
     display: none;
-
 }
 
 /* Container for centering the form */
@@ -104,34 +185,36 @@ main nav div {
     flex-direction: column;
     align-items: center;
     gap: 4vh;
-    background: rgba(244, 244, 245, 0.62); /* More readable */
+    background: rgba(216, 216, 216, 0.596);
+    /* More readable */
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
 
 /* Input styling */
 .org-form form input {
     padding: 10px 20px;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #313131;
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
-    transition: border 0.3s ease;
 }
 
 /* Focus effect */
 .org-form form input:focus {
-    border: 1px solid #f59f00;
+    border: 2px solid #f59f00;
     outline: none;
+    box-shadow: rgba(255, 154, 22, 0.753) 0px 5px 15px;
 }
 
 /* Button styling */
 .org-form form button {
     padding: 10px 25px;
     background: #f59f00;
+    width: 400px;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
